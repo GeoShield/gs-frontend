@@ -83,3 +83,151 @@ header {
 .links-menu a:hover {
     color: darkblue; 
 }
+
+.hero {
+    background: linear-gradient(to right, #2c3e50, #34495e); /* Gradiente sutil */
+    color: #ecf0f1;
+    padding: 60px 0;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-principal {
+    max-width: 600px;
+}
+
+.texto-principal h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.texto-principal p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.botoes-principais {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-white {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.btn-white:hover {
+    background: #bdc3c7;
+}
+
+.btn-green {
+    background: #27ae60;
+    color: #fff;
+}
+
+.btn-green:hover {
+    background: #2ecc71;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; 
+}
+
+footer {
+    background-color: #1d2935;
+    color: #ecf0f1;
+    padding: 20px 0; /* Reduzi a altura */
+}
+
+/* Organizando os itens em linha */
+footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Logo ajustado */
+footer img {
+    height: 40px; /* Redução da altura */
+}
+
+/* Texto alinhado lateralmente */
+footer h3, footer p {
+    font-size: 13px;
+    margin: 0 12px;
+}
+
+/* Rodapé inferior mais compacto */
+.footer-bottom {
+    text-align: center;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .links-menu {
+        flex-direction: row; 
+        text-align: center;
+        gap: 10px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    #logo {
+        margin-bottom: 20px;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image {
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    .botoes-principais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer img {
+        margin-bottom: 10px;
+    }
+
+    footer h3, footer p {
+        margin: 5px 0;
+    }
+}
