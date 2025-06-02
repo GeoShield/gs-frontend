@@ -155,10 +155,9 @@ header {
 footer {
     background-color: #1d2935;
     color: #ecf0f1;
-    padding: 20px 0; /* Reduzi a altura */
+    padding: 20px 0; 
 }
 
-/* Organizando os itens em linha */
 footer .container {
     display: flex;
     align-items: center;
@@ -168,21 +167,75 @@ footer .container {
     margin: 0 auto;
 }
 
-/* Logo ajustado */
 footer img {
-    height: 40px; /* Redução da altura */
+    height: 40px; 
 }
 
-/* Texto alinhado lateralmente */
 footer h3, footer p {
     font-size: 13px;
     margin: 0 12px;
 }
 
-/* Rodapé inferior mais compacto */
 .footer-bottom {
     text-align: center;
     font-size: 14px;
+}
+
+.introducao {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.introducao h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.introducao p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.conteudo {
+    padding: 60px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.box-missao, .box-visao {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box-valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.valores {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.valores h4 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -230,4 +283,14 @@ footer h3, footer p {
     footer h3, footer p {
         margin: 5px 0;
     }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .box-valores {
+        grid-template-columns: 1fr;
+    }
+
 }
