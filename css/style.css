@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 1rem;
 }
 
+.forms{
+    text-align: center;
+}
+
 p{
     margin-bottom: 1rem;
 }
@@ -62,17 +66,17 @@ header {
     width: 300px;
 }
 
-.menu {
+.menu, .links-menu_faq {
     display: flex;
 }
 
-.links-menu {
+.links-menu, .links-menu_faq {
     display: flex;
     gap: 20px; 
     list-style: none;
 }
 
-.links-menu a {
+.links-menu a, .links-menu_faq a {
     text-decoration: none;
     color: #ecf0f1; 
     font-size: 16px;
@@ -80,7 +84,7 @@ header {
     transition: color 0.3s ease-in-out;
 }
 
-.links-menu a:hover {
+.links-menu a:hover, .links-menu_faq a:hover {
     color: darkblue; 
 }
 
@@ -244,7 +248,7 @@ footer h3, footer p {
         flex-direction: column; 
         align-items: center;
     }
-    .links-menu {
+    .links-menu, .links-menu_faq {
         flex-direction: row; 
         text-align: center;
         gap: 10px;
@@ -293,4 +297,75 @@ footer h3, footer p {
         grid-template-columns: 1fr;
     }
 
+}
+
+.faq-container {
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+.faq-container h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+.faq-container section {
+    margin-bottom: 20px;
+}
+
+
+.como-funciona-container {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.como-funciona-container h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+.como-funciona-container p {
+    line-height: 1.6;
+}
+
+.contato-container {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.contato-container h1 {
+    text-align: center;
+    color: #2563eb;
+}
+
+.contato-container form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-container input, .contato-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-container button {
+    padding: 12px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-container button:hover {
+    background-color: #1e40af;
 }
