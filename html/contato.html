@@ -5,12 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <img src="../images/logo-final.png" alt="Logo da GeoShield" width="300px">
+            <ul class="links-menu_faq">
+                <a href="../index.html">Início</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contato.html">Contato</a>
+                <a href="integrantes.html">Sobre Nós</a>
+            </ul>
+        </div>
+    </header>
 
+    <main class="contato-container">
+        <h1>Entre em Contato</h1>
+        <p class="forms">Se você tem dúvidas, sugestões ou deseja colaborar com o projeto GeoShield, preencha o
+            formulário abaixo e entraremos em contato.</p>
+
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <div class="container">
+            <img src="../images/logo-final.png" alt="Logo da GeoShield">
+            <p>Proteção Geográfica Inteligente para comunidades afetadas por desastres naturais.</p>
+            <div class="footer-bottom">
+                <p>&copy;GeoShield. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
