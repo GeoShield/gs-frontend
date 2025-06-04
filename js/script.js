@@ -28,3 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".help-button");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            alert("Funcionalidade em desenvolvimento! Em breve você poderá solicitar ajuda.");
+        });
+    });
+});
+
