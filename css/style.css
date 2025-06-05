@@ -688,3 +688,68 @@ body {
 .help-button:hover {
     background: #005fa3;
 }
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+.links-menu {
+    list-style: none;
+    padding: 0;
+}
+
+.links-menu li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.links-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.team-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 280px;
+    background: #e6f7ff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px;
+}
+
+.team-member img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    text-decoration: none;
+    color: #0077c2;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #005fa3;
+}
+
